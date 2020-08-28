@@ -1,5 +1,6 @@
 <?php
 
+namespace FunctionsPlus;
 
 class Characters
 {
@@ -382,6 +383,7 @@ class Characters
      * | U+0111   | đ     | dj          | Latin small letter d with stroke        |
      *
      * @param string $string Text that might have accent characters
+     * @param null $locale
      * @return string Filtered string with replaced "nice" characters.
      */
     public static function convertString($string, $locale = null)

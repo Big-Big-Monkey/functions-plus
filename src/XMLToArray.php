@@ -1,5 +1,8 @@
 <?php
 
+namespace FunctionsPlus;
+
+use DOMDocument;
 
 class XMLToArray
 {
@@ -7,10 +10,12 @@ class XMLToArray
      * The name of the XML attribute that indicates a namespace definition
      */
     const ATTRIBUTE_NAMESPACE = 'xmlns';
+
     /**
      * The string that separates the namespace attribute from the prefix for the namespace
      */
     const ATTRIBUTE_NAMESPACE_SEPARATOR = ':';
+
     /**
      * The configuration of the current instance
      * @var array
@@ -72,6 +77,7 @@ class XMLToArray
      * @param DOMDocument|string $inputXml The XML to convert to an array
      * @param array $config The configuration to use for the conversion
      * @return array An array representation of the input XML
+     * @throws \Exception
      */
     public static function &createArray($inputXml, $config = array())
     {
@@ -83,6 +89,7 @@ class XMLToArray
      * Convert an XML DOMDocument or XML string to an array
      * @param DOMDocument|string $inputXml The XML to convert to an array
      * @return array An array representation of the input XML
+     * @throws \Exception
      */
     public function &buildArray($inputXml)
     {
