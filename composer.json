@@ -1,0 +1,25 @@
+{
+  "name": "graywolf/functions-plus",
+  "description": "More functional functions.",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "functions"
+  ],
+  "homepage": "https://github.com/Big-Big-Monkey/functions-plus",
+  "authors": [
+    {
+      "name": "Gray Wolf",
+      "email": "krcharen@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "functions-plus\\": "src/"
+    }
+  }
+}
